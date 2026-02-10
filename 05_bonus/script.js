@@ -7,12 +7,34 @@ e buonasera se è sera (oltre le 17)
 
 const name = 'Mario';
 
-
 // Dichiara la funzione qui.
 
+function welcomeUser(user, time) {
+
+    let hello;
+
+    if (time >= 17) { // buonasera se è sera oltre le 17
+        
+        hello = 'Buonasera '
+
+    } else if (time >= 13) { // buonpomeriggio se è pomeriggio fino alle 17
+
+        hello = 'Buonpomeriggio '
+
+    } else { // buongiorno se è mattina fino alle 13
+
+        hello = 'Buongiorno '
+
+    }
+
+    const HelloUser = hello + user
+
+    return HelloUser
+
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(welcomeUser(name, 18))
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
