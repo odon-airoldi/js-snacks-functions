@@ -11,7 +11,8 @@ function get_inits_words(arr_words) {
 
     for(i = 0; i < arr_words.length; i++) {
 
-        const inits_words = arr_words[i].substring(0, 1)
+        //[i] arr_words value index [0] single value index
+        const inits_words = arr_words[i][0]
 
         arr_inits_words.push(inits_words)
 
