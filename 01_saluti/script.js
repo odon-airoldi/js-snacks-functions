@@ -5,9 +5,9 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 
-function welcomeUser(name) {
+function welcomeUser(Name) {
 
-    const HelloName = 'ciao ' + name
+    const HelloName = 'ciao ' + Name
     return HelloName
 
 }
@@ -17,3 +17,11 @@ function welcomeUser(name) {
 console.log(welcomeUser(userName))
 
 // Risultato atteso se si passa 'Mario': // ciao Mario
+
+
+
+// Arrow Functions Version
+
+const welcomeUser_ = (Name) => 'ciao ' + Name;
+
+console.log(welcomeUser_(userName))
