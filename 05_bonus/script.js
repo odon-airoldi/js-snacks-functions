@@ -13,7 +13,7 @@ function welcomeUser(user, time) {
 
     let hello;
 
-    if (time >= 17) { // buonasera se è sera oltre le 17
+    if (time >= 18) { // buonasera se è sera oltre le 17
         
         hello = 'Buonasera '
 
@@ -35,6 +35,8 @@ function welcomeUser(user, time) {
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(welcomeUser(name, 18))
+let currentTime = new Date().getHours();
+
+console.log(welcomeUser(name, currentTime))
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
