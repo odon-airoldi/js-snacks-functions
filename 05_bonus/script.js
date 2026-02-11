@@ -40,3 +40,11 @@ let currentTime = new Date().getHours();
 console.log(welcomeUser(name, currentTime))
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
+
+
+
+// Arrow Functions Version
+
+const welcomeUser_ = (user, time) => time >= 18 ? hello = 'Buonasera ' : time >= 13 ? hello = 'Buonpomeriggio ' : hello = 'Buongiorno ' + user;
+
+console.log(welcomeUser_(name, currentTime))

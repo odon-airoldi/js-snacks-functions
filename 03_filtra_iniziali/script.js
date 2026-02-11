@@ -11,7 +11,7 @@ function get_words_same_initial(arr_words, letter) {
 
     for(i = 0; i < arr_words.length; i++) {
 
-        const inits_words = arr_words[i].substring(0, 1)
+        const inits_words = arr_words[i][0]
 
         if (inits_words === letter) {
 
